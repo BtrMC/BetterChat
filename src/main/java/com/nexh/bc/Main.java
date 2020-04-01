@@ -2,6 +2,7 @@ package com.nexh.bc;
 
 import org.bukkit.plugin.java.JavaPlugin;
 import com.nexh.cmds.*;
+import com.nexh.listeners.*;
 
 public class Main extends JavaPlugin {
 
@@ -17,6 +18,8 @@ public class Main extends JavaPlugin {
         this.getCommand("ccx").setExecutor(new Clearchat());
         getServer().getPluginManager().registerEvents(new muteListener(), this); */
         this.getCommand("clearchat").setExecutor(new clearChat());
+        this.getCommand("globalmute").setExecutor(new globalMute());
+        getServer().getPluginManager().registerEvents(new muteListener(), this);
         loadConfig();
     }
 
