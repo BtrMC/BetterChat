@@ -1,5 +1,6 @@
 package com.nexh.cmds;
 
+import com.nexh.bc.Main;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -8,6 +9,7 @@ import org.bukkit.entity.Player;
 import com.nexh.Util;
 
 public class bcMsg implements CommandExecutor {
+    private Main plugin = Main.getPlugin(Main.class);
     @Override
     public boolean onCommand(CommandSender sender, Command command, String s, String[] args) {
         Player p = (Player) sender;
@@ -17,7 +19,8 @@ public class bcMsg implements CommandExecutor {
             for (int i = 0; i < args.length; i++) {
                 st.append(args[i]).append(" ");
             }
-            Bukkit.broadcastMessage(Util.cColor("&3&LANNOUNCEMENT &8- &7" + st.toString()));
+            String format = plugin.getConfig().getString("Announce_Format");
+            Bukkit.broadcastMessage(Util.cColor(format + " &7" + st.toString()));
         } else {
             Util.sendPl(p, Util.cColor("&cUsage: /ac (message)"));
         }

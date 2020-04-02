@@ -1,4 +1,5 @@
 # PLEASE EDIT THIS
+Announce_Format: "&3&lANNOUNCEMENT &8-"
 Filter_Banned_Words: true
 Banned_Words:
   - frig

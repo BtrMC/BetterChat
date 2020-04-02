@@ -2,7 +2,6 @@ package com.nexh.listeners;
 
 import com.nexh.Util;
 import com.nexh.bc.Main;
-import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
