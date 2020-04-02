@@ -12,11 +12,6 @@ public class Main extends JavaPlugin {
     @Override
     public void onEnable() {
 
-        /* this.getCommand("gamemode").setExecutor(new Gamemode());
-        this.getCommand("mute").setExecutor(new Mute());
-        this.getCommand("clearchat").setExecutor(new Clearchat());
-        this.getCommand("ccx").setExecutor(new Clearchat());
-        getServer().getPluginManager().registerEvents(new muteListener(), this); */
         this.getCommand("clearchat").setExecutor(new clearChat());
         this.getCommand("globalmute").setExecutor(new globalMute());
         this.getCommand("broadcast").setExecutor(new bcMsg());
