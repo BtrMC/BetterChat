@@ -14,7 +14,7 @@ public class swearListener implements Listener {
         Player p = event.getPlayer();
         String m = event.getMessage();
         for(String s: m.split(" ")) {
-            if(plugin.getConfig().getString("Filter_Banned_Words").equalsIgnoreCase("true")) {
+            if(plugin.getConfig().getBoolean("Filter_Banned_Words")) {
                 if(plugin.getConfig().getStringList("Banned_Words").contains(s)) {
                     if(!p.hasPermission("bc.swear.bypass")) {
                         event.setCancelled(true);
