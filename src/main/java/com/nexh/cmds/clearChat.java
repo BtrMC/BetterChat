@@ -12,8 +12,7 @@ public class clearChat implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String s, String[] strings) {
         Player player = (Player) sender;
         if (!player.hasPermission("bc.clearchat")) {Util.sendPl(player, Util.cColor("&cYou don't have permission!")); return true;}
-        int i;
-        for (i = 0; i < 300; i++) {
+        for (int i = 0; i < 300; i++) {
             Util.bcMsg(" ");
         }
         Util.bcMsg(Util.cColor("&b" + player.getName() + " &7cleared the chat!"));
