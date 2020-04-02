@@ -20,10 +20,10 @@ public class bc implements CommandExecutor {
             Util.sendPl(p, Util.cColor("&3/bc rl &8- &7Reload the config"));
             Util.sendPl(p, Util.cColor("&3----------------------------------"));
         } else if(args[0].equalsIgnoreCase("rl")) {
-            plugin.saveConfig();
+            plugin.reloadConfig();
             Util.sendPl(p, Util.cColor("&cReloaded the config!"));
         } else if(args[0].equalsIgnoreCase("reload")) {
-            plugin.saveConfig();
+            plugin.reloadConfig();
             Util.sendPl(p, Util.cColor("&cReloaded the config!"));
         } else {
             Util.sendPl(p, Util.cColor("&3----------------------------------"));
