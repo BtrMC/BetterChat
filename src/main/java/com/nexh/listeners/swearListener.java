@@ -17,8 +17,10 @@ public class swearListener implements Listener {
         for(String s: m.split(" ")) {
             if(plugin.getConfig().getString("Filter_Banned_Words").contains("true")) {
                 if(plugin.getConfig().getStringList("Banned_Words").contains(s)) {
-                    event.setCancelled(true);
-                    Util.sendPl(p, Util.cColor("&cDon't curse on this server!"));
+                    if(!p.hasPermission("bc.swear.bypass")) {
+                        event.setCancelled(true);
+                        Util.sendPl(p, Util.cColor("&cDon't swear on this server!"));
+                    }
                 }
             }
         }

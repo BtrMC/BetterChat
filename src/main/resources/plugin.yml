@@ -1,3 +1,13 @@
-name: CryptX
+name: BetterChat
 main: com.nexh.bc.Main
 version: 1.0.0
+commands:
+  globalmute:
+    aliases: [ mutechat, mc, togglechat, tc ]
+    description: Mute global chat.
+  clearchat:
+    aliases: [ cc, chatclear ]
+    description: Clear the server chat.
+  bc:
+    aliases: [ betterchat, chatbetter ]
+    description: Get the commands for the BetterChat plugin.
