@@ -20,6 +20,7 @@ public class Main extends JavaPlugin {
         this.getCommand("clearchat").setExecutor(new clearChat());
         this.getCommand("globalmute").setExecutor(new globalMute());
         getServer().getPluginManager().registerEvents(new muteListener(), this);
+        getServer().getPluginManager().registerEvents(new swearListener(), this);
         loadConfig();
     }
 

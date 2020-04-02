@@ -11,7 +11,6 @@ public class muteListener implements Listener {
     @EventHandler
     public void onChat(AsyncPlayerChatEvent event) {
         Player p = event.getPlayer();
-        String m = event.getMessage();
         if(globalMute.mute) {
             if (!p.hasPermission("cx.mute.bypass")) {
                 Util.sendPl(p, Util.cColor("&cChat is currently muted!"));
