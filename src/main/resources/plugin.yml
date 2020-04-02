@@ -11,3 +11,23 @@ commands:
   bc:
     aliases: [ betterchat, chatbetter ]
     description: Get the commands for the BetterChat plugin.
+  broadcast:
+    aliases: [ alert, announce, a, ac ]
+    description: Broadcast a message to the server.
+permissions:
+  bc.*:
+    description: Gives permission to all the BetterChat commands.
+  bc.reload:
+    description: Gives permission to reload BetterChat config.
+  bc.broadcast:
+    description: Gives permission to broadcast messages.
+  bc.clearchat:
+    description: Gives permission to clear chat.
+  bc.mute.global:
+    description: Gives permission to mute server chat.
+  bc.mute.bypass:
+    description: GIves permission to bypass server mute.
+  bc.mute.*:
+    description: GIves permission for all BetterChat mute commands.
+  bc.swear.bypass:
+    description: GIves permission to bypass chat filter.

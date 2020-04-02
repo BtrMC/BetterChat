@@ -17,6 +17,7 @@ public class bc implements CommandExecutor {
             Util.sendPl(p, Util.cColor("&3----------------------------------"));
             Util.sendPl(p, Util.cColor("&3/clearchat &8- &7Clear the chat"));
             Util.sendPl(p, Util.cColor("&3/mutechat &8- &7Mute server chat"));
+            Util.sendPl(p, Util.cColor("&3/announce &8- &7Announce to the server!"));
             Util.sendPl(p, Util.cColor("&3/bc rl &8- &7Reload the config"));
             Util.sendPl(p, Util.cColor("&3----------------------------------"));
         } else if(args[0].equalsIgnoreCase("rl")) {
@@ -29,6 +30,7 @@ public class bc implements CommandExecutor {
             Util.sendPl(p, Util.cColor("&3----------------------------------"));
             Util.sendPl(p, Util.cColor("&3/clearchat &8- &7Clear the chat"));
             Util.sendPl(p, Util.cColor("&3/mutechat &8- &7Mute global chat"));
+            Util.sendPl(p, Util.cColor("&3/announce &8- &7Announce to the server!"));
             Util.sendPl(p, Util.cColor("&3/bc rl &8- &7Reload the config"));
             Util.sendPl(p, Util.cColor("&3----------------------------------"));
         }

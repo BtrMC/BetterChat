@@ -19,6 +19,7 @@ public class Main extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new muteListener(), this); */
         this.getCommand("clearchat").setExecutor(new clearChat());
         this.getCommand("globalmute").setExecutor(new globalMute());
+        this.getCommand("broadcast").setExecutor(new bcMsg());
         this.getCommand("bc").setExecutor(new bc());
         getServer().getPluginManager().registerEvents(new muteListener(), this);
         getServer().getPluginManager().registerEvents(new swearListener(), this);
