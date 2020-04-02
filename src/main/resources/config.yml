@@ -1,5 +1,5 @@
 # PLEASE EDIT THIS
-Filter: true
+Filter_Banned_Words: true
 Banned_Words:
   - frig
   - crap

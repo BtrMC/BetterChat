@@ -15,7 +15,7 @@ public class swearListener implements Listener {
         Player p = event.getPlayer();
         String m = event.getMessage();
         for(String s: m.split(" ")) {
-            if(plugin.getConfig().getString("Filter").contains("true")) {
+            if(plugin.getConfig().getString("Filter_Banned_Words").contains("true")) {
                 if(plugin.getConfig().getStringList("Banned_Words").contains(s)) {
                     event.setCancelled(true);
                     Util.sendPl(p, Util.cColor("&cDon't curse on this server!"));
