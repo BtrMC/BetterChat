@@ -1,6 +1,6 @@
 # PLEASE EDIT THIS
 Announce_Format: "&3&lANNOUNCEMENT &8-"
-Filter_Banned_Words: true
+Filter_Banned_Words: false
 Banned_Words:
   - frig
   - crap
