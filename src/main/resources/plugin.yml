@@ -26,8 +26,8 @@ permissions:
   bc.mute.global:
     description: Gives permission to mute server chat.
   bc.mute.bypass:
-    description: GIves permission to bypass server mute.
+    description: Gives permission to bypass server mute.
   bc.mute.*:
-    description: GIves permission for all BetterChat mute commands.
+    description: Gives permission for all BetterChat mute commands.
   bc.swear.bypass:
-    description: GIves permission to bypass chat filter.
+    description: Gives permission to bypass chat filter.
