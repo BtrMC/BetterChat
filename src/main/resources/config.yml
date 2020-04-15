@@ -1,6 +1,8 @@
-# PLEASE EDIT THIS
 Announce_Format: "&3&lANNOUNCEMENT &8-"
+Filter_Format: "&cDon't swear on this server!"
+Mute_Format: "&cChat is currently muted!"
 Filter_Banned_Words: false
+# PLEASE EDIT THIS LIST
 Banned_Words:
   - frig
   - crap
