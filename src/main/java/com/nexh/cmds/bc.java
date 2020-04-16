@@ -8,7 +8,7 @@ import org.bukkit.entity.Player;
 import com.nexh.Util;
 
 public class bc implements CommandExecutor {
-    private double version = 1.2;
+    private String version = "1.1.1";
     private Main plugin = Main.getPlugin(Main.class);
     @Override
     public boolean onCommand(CommandSender sender, Command command, String s, String[] args) {
