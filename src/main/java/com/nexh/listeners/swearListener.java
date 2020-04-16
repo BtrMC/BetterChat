@@ -21,8 +21,6 @@ public class swearListener implements Listener {
                         Util.sendPl(p, Util.cColor(plugin.getConfig().getString("Filter_Format")));
                     }
                 }
-            } else {
-                event.setCancelled(false);
             }
         }
     }

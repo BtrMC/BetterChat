@@ -17,8 +17,6 @@ public class muteListener implements Listener {
             if (!p.hasPermission("bc.mute.bypass")) {
                 Util.sendPl(p, Util.cColor(plugin.getConfig().getString("Mute_Format")));
                 event.setCancelled(true);
-            } else {
-                event.setCancelled(false);
             }
         }
     }
