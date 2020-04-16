@@ -33,7 +33,7 @@ public class Main extends JavaPlugin {
 
     private void versionChecker() {
         try {
-            HttpURLConnection connection = (HttpURLConnection) new URL("https://api.spigotmc.org/legacy/update.php?resource=77467").openConnection();
+            HttpURLConnection connection = (HttpURLConnection) new URL("https://raw.githubusercontent.com/razod/BetterChat/master/version.txt").openConnection();
             connection.setDoOutput(true);
             connection.setRequestMethod("GET");
             // connection.getOutputStream().write((key + 77467).getBytes("UTF-8"));

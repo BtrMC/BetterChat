@@ -14,7 +14,7 @@ public class bc implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String s, String[] args) {
         Player p = (Player) sender;
         if(args.length == 0) {
-            Util.sendPl(p, Util.cColor("&3------ &3&lBetterChat v" + version + "&7by Nexh &3------"));
+            Util.sendPl(p, Util.cColor("&3------ &3&lBetterChat v" + version + " &7by Nexh &3------"));
             Util.sendPl(p, Util.cColor("&3/clearchat &8- &7Clear the chat"));
             Util.sendPl(p, Util.cColor("&3/mutechat &8- &7Mute server chat"));
             Util.sendPl(p, Util.cColor("&3/announce &8- &7Announce to the server!"));
