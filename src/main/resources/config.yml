@@ -4,10 +4,7 @@ Mute_Format: "&cChat is currently muted!"
 Filter_Banned_Words: false
 # PLEASE EDIT THIS LIST
 Banned_Words:
-  - frig
-  - crap
-  - poopy
-  - butt
-  - heck
-  - stupid
-  - mean
+  - enter
+  - banned
+  - words
+  - here
