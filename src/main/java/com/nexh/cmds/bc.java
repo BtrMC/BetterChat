@@ -12,7 +12,6 @@ public class bc implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String s, String[] args) {
         Player p = (Player) sender;
-        if(!p.hasPermission("bc.reload")) {Util.sendPl(p, Util.cColor("&cYou don't have permission!")); return false;}
         if(args.length == 0) {
             Util.sendPl(p, Util.cColor("&3------ &3&lBetterChat &7by Nexh &3------"));
             Util.sendPl(p, Util.cColor("&3/clearchat &8- &7Clear the chat"));
@@ -21,9 +20,11 @@ public class bc implements CommandExecutor {
             Util.sendPl(p, Util.cColor("&3/bc rl &8- &7Reload the config"));
             Util.sendPl(p, Util.cColor("&3------ &3&lBetterChat &7by Nexh &3------"));
         } else if(args[0].equalsIgnoreCase("rl")) {
+            if(!p.hasPermission("bc.reload")) {Util.sendPl(p, Util.cColor("&cYou don't have permission!")); return false;}
             plugin.reloadConfig();
             Util.sendPl(p, Util.cColor("&cReloaded the config!"));
         } else if(args[0].equalsIgnoreCase("reload")) {
+            if(!p.hasPermission("bc.reload")) {Util.sendPl(p, Util.cColor("&cYou don't have permission!")); return false;}
             plugin.reloadConfig();
             Util.sendPl(p, Util.cColor("&cReloaded the config!"));
         } else {
