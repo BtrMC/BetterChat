@@ -8,13 +8,13 @@ import org.bukkit.entity.Player;
 import com.nexh.Util;
 
 public class bc implements CommandExecutor {
-    private String version = "1.1.1";
+    private String version = "1.1.2";
     private Main plugin = Main.getPlugin(Main.class);
     @Override
     public boolean onCommand(CommandSender sender, Command command, String s, String[] args) {
         Player p = (Player) sender;
         if(args.length == 0) {
-            Util.sendPl(p, Util.cColor("&3------ &3&lBetterChat v" + version + " &7by Nexh &3------"));
+            Util.sendPl(p, Util.cColor("&3------ &3BetterChat v" + version + " &7by Nexh &3------"));
             Util.sendPl(p, Util.cColor("&3/bc rl &8- &7Reload the config"));
             Util.sendPl(p, Util.cColor("&3/bc help &8- &7Get help!"));
             Util.sendPl(p, Util.cColor("&3/bc version &8- &7See the version you're using"));
@@ -35,7 +35,7 @@ public class bc implements CommandExecutor {
         } else if(args[0].equalsIgnoreCase("version")) {
             Util.sendPl(p, Util.cColor("&7You're using &3BetterChat &7v&3" + version + "&7 by Nexh."));
         } else {
-            Util.sendPl(p, Util.cColor("&3------ &3&lBetterChat v" + version + " &7by Nexh &3------"));
+            Util.sendPl(p, Util.cColor("&3------ &3BetterChat v" + version + " &7by Nexh &3------"));
             Util.sendPl(p, Util.cColor("&3/bc rl &8- &7Reload the config"));
             Util.sendPl(p, Util.cColor("&3/bc help &8- &7Get help!"));
             Util.sendPl(p, Util.cColor("&3/clearchat &8- &7Clear the chat"));

@@ -33,12 +33,12 @@ public class Main extends JavaPlugin {
 
     private void versionChecker() {
         try {
-            HttpURLConnection connection = (HttpURLConnection) new URL("https://raw.githubusercontent.com/razod/BetterChat/master/version.txt").openConnection();
+            HttpURLConnection connection = (HttpURLConnection) new URL("https://raw.githubusercontent.com/btrmc/BetterChat/master/version.txt").openConnection();
             connection.setDoOutput(true);
             connection.setRequestMethod("GET");
             // connection.getOutputStream().write((key + 77467).getBytes("UTF-8"));
             String version = new BufferedReader(new InputStreamReader(connection.getInputStream())).readLine();
-            if (!version.equals("1.1.1")) {
+            if (!version.equals("1.1.2")) {
                 this.getServer().getConsoleSender().sendMessage(Util.cColor("&3[!] &7Your BetterChat version is outdated!"));
                 this.getServer().broadcastMessage(Util.cColor("&3[!] &7Your BetterChat version is outdated!"));
             }
