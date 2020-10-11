@@ -14,6 +14,7 @@ public class bc implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String s, String[] args) {
         Player p = (Player) sender;
         if(args.length == 0) {
+            Util.sendPl(p, Util.cColor("&7To add/request a feature go to: https://github.com/btrmc/betterchat"));
             Util.sendPl(p, Util.cColor("&3------ &3BetterChat v" + version + " &7by Nexh &3------"));
             Util.sendPl(p, Util.cColor("&3/bc rl &8- &7Reload the config"));
             Util.sendPl(p, Util.cColor("&3/bc help &8- &7Get help!"));

@@ -1,6 +1,6 @@
 name: BetterChat
 main: com.nexh.bc.Main
-version: 1.1.1
+version: 1.1.3
 commands:
   globalmute:
     aliases: [ mutechat, mc, togglechat, tc ]

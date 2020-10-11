@@ -38,7 +38,7 @@ public class Main extends JavaPlugin {
             connection.setRequestMethod("GET");
             // connection.getOutputStream().write((key + 77467).getBytes("UTF-8"));
             String version = new BufferedReader(new InputStreamReader(connection.getInputStream())).readLine();
-            if (!version.equals("1.1.2")) {
+            if (!version.equals("1.1.3")) {
                 this.getServer().getConsoleSender().sendMessage(Util.cColor("&3[!] &7Your BetterChat version is outdated!"));
                 this.getServer().broadcastMessage(Util.cColor("&3[!] &7Your BetterChat version is outdated!"));
             }
