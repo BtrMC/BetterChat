@@ -1,5 +1,5 @@
-Announce_Format: "&3&lANNOUNCEMENT &8-"
-Filter_Format: "&cDon't swear on this server!"
+Announce_Format: "&8[&cAlert&8] &r"
+Filter_Format: "&cYou can't say that!"
 Mute_Format: "&cChat is currently muted!"
 Filter_Banned_Words: false
 # PLEASE EDIT THIS LIST
