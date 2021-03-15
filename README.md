@@ -1,3 +1,6 @@
+> BetterChat is no longer being maintained, someone may fork it and maintain it from there.
+
+
 # BetterChat
 This is my java plugin that aims to help manage chat. You can mute the chat, clear the chat, and announce messages. There is also a toggle-able chat filter, that you can add words to ban in the `config.yml` and you can change the announce format too!
 
